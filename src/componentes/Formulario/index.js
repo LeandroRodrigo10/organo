@@ -22,7 +22,7 @@ const [imagem, setImagem] = useState("")
 const [time, setTime] = useState("")
 
     const aoSalvar = (evento) => {
-        evento.preventDefeault()
+        evento.preventDefault()
         props.aoColaboradorCadastrado({
             nome,
             cargo,
