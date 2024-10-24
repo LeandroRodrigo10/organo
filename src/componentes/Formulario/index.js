@@ -23,7 +23,6 @@ const Formulario = (props) => {
     const aoSalvar = (evento) => {
         evento.preventDefault();
         
-        // Adiciona o colaborador
         props.aoColaboradorCadastrado({
             nome,
             cargo,
@@ -31,7 +30,6 @@ const Formulario = (props) => {
             time
         });
 
-        // Limpa os campos do formulário
         setNome("");
         setCargo("");
         setImagem("");
@@ -69,7 +67,7 @@ const Formulario = (props) => {
                     obrigatorio={true} 
                     label="Time" 
                     itens={times}
-                    valor={time} // Corrigido: 'valor={time}' em vez de 'props.time'
+                    valor={time} 
                     aoAlterado={valor => setTime(valor)}
                 />
 
