@@ -23,14 +23,14 @@ const [time, setTime] = useState("")
 
     const aoSalvar = (evento) => {
         evento.preventDefault()
+
         props.aoColaboradorCadastrado({
             nome,
             cargo,
             imagem,
             time
-        }
-
-        )
+        });
+        
     }
 
     return (
