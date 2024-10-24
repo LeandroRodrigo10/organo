@@ -64,7 +64,7 @@ const [time, setTime] = useState("")
                 obrigatorio={true} 
                 label="Time" 
                 itens={times}
-                valor={time}
+                valor={props.time}
                 aoAlterado={valor => setTime(valor)}
                 />
 

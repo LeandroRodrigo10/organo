@@ -24,7 +24,7 @@ function App() {
     {
       nome: "Devops",
       corPrimaria: "#E06B69",
-      corSecundaria: "#FDETE8"
+      corSecundaria: "#FDE7E8"
     },
     {
       nome: "UX e Design",
@@ -46,7 +46,6 @@ function App() {
   const [colaboradores, setColaboradores] = useState([])
 
   const aoNovoColaboradorAdicionado = (colaborador) =>{
-    console.log(colaborador)
     setColaboradores([...colaboradores, colaborador])
   }
 
@@ -68,4 +67,4 @@ function App() {
   );
 }
 
-export default App //teste
+export default App 
