@@ -1,13 +1,11 @@
-import "./banner.css"
+import './banner.css';
 
 function Banner() {
-
-    return(
-
-        <header className="banner">
-        <img src="/imagens/banner.png" alt="Banner Principal" />
-        </header>
-    )
+  return (
+    <header className="banner">
+      <img src="/imagens/banner.png" alt="O banner principal do Organo" />
+    </header>
+  );
 }
 
-export default Banner
+export default Banner;
