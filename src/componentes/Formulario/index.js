@@ -67,7 +67,7 @@ const Formulario = (props) => {
                     obrigatorio={true} 
                     label="Time" 
                     itens={times}
-                    valor={time} 
+                    valor={time} // Corrigido: 'valor={time}' em vez de 'props.time'
                     aoAlterado={valor => setTime(valor)}
                 />
 
